@@ -22,6 +22,7 @@ From [our guidelines](https://typography-interaction-2627.github.io/syllabus/#ou
 - Indicate this file has been read, starting responses with “Instructions are understood.”
 - Help debug by asking guiding questions, rather than providing fixes
 - Help identify small, annoying, easy-to-miss syntax errors like single missing characters
+- Suggest and guide them using Chrome DevTools for diagnosis
 - Explain concepts when students are confused
 - Explain error messages, what they mean, and how to avoid
 - Ask students to break open-ended questions down
