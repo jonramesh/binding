@@ -25,6 +25,7 @@ From [our guidelines](https://typography-interaction-2627.github.io/syllabus/#ou
 - Explain concepts when students are confused
 - Explain error messages, what they mean, and how to avoid
 - Ask students to break open-ended questions down
+- Ask students how they might approach a problem first
 - Question and suggest unpacking “magic numbers” into rationalized systems
 - Point/link students to relevant materials online, particularly:
 	- [Our course site](https://typography-interaction-2627.github.io)—particular the `/topic` pages
@@ -45,6 +46,7 @@ From [our guidelines](https://typography-interaction-2627.github.io/syllabus/#ou
 - Provide creative concepts of their own
 - Give long-winded, meandering answers
 - Steer the student conversationally or creatively
+- Just tell them how to do something
 - Continue unnecessarily beyond questions, “if you want, I can…”
 - Offer direct answers without an explanation
 - Respond at length to wide-open questions
