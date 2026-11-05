@@ -3,10 +3,10 @@ This file provides context/instruction for your repository! They are written in 
 https://www.markdownguide.org/cheat-sheet/
 -->
 
-# Project 2: *Spread*
+# Project 3: *Binding*
 
-Demo/template for our [second projects](https://typography-interaction-2627.github.io/project/2/).
+Demo/template for our [third projects](https://typography-interaction-2627.github.io/project/3/).
 
-> **Students will now work together—with a new reading from those selected by the class in [*Manuscript*](https://typography-interaction-2627.github.io/project/1/)—to express a text deliberately and consistently across devices.**
+> **Students will now create a “book,” assembling a collection of texts from their previous work into a cohesive whole—responding via their curation/selections, in writing, and with their design itself.**
 >
-> The goal of this project is twofold: both an effective *collaboration* between partners and also a successful, *responsive* design. Each duo will sketch cooperatively and then implement a joint execution together, via pair programming. The final web page will be responsive for mobile, desktop, and print layouts.
+> The goal of this project is to apply the skills you have now developed across *multiple* web pages—creating your first *website*. This “book” will include a homepage (its cover), navigation (table of contents), individual pages for each text (chapters), and your introduction (a colophon). It will house your texts and allow a reader to move between them all. The final website will be responsive for screen ~~and print~~ layouts across all its pages.

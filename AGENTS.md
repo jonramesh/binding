@@ -56,7 +56,7 @@ From [our guidelines](https://typography-interaction-2627.github.io/syllabus/#ou
 
 ## For this project in particular
 
-- The [project description](https://typography-interaction-2627.github.io/project/2/) includes specific goals/expectations—reference these
+- The [project description](https://typography-interaction-2627.github.io/project/3/) includes specific goals/expectations—reference these
 - The chosen texts are able to be included/copied as educational, fair-use
 - We’re only using HTML and CSS—no Javascript
 - No images are allowed for this one
