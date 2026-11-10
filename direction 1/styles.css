@@ -1,0 +1,47 @@
+
+:where(:root){
+--leading: 2cap;
+--size-root:20;
+--font-size:calc((var(--size-root)/16) * 100%);
+
+--alley: 2rcap;
+--gutter-base:calc(var(--alley)/2);
+--size-h1:2rem;
+
+
+font-size:var(--font-size);
+
+
+
+
+}
+
+
+
+
+h1{
+
+font-size: var(--size-h1);
+
+
+}
+
+h2{
+
+
+}
+
+
+#original-article{
+	>section{
+		>p{
+			margin-block-end:calc(var(--font-size) * (.1))
+		}
+
+
+
+
+	}
+
+
+}
