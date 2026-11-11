@@ -94,6 +94,9 @@ h1{
 	font-size:clamp(2.5rem, 12vw, 6rem);
 	text-box:trim-both cap alphabetic;
 	line-height:1.25cap;
+	font-family:geist pixel;
+	font-style: normal;
+	font-weight:200;
 
 }
 
@@ -103,6 +106,7 @@ h2{
 	font-family:geist pixel;
 	font-weight:400;
 	line-height:1.5cap;
+	font-size:1.5rem;
 
 }
 
@@ -121,6 +125,8 @@ header{
 		font-weight:300;
 		text-align:end;
 		font-family:geist pixel;
+		font-style: normal;
+
 
 
 
@@ -137,22 +143,64 @@ header{
 
 	display:flex;
 	flex-direction:column;
-	height:1em;
+	position:sticky;
+	top:0;
+	background:white;
 
+
+}
+.folder-tab::after{
+	content:"";
+	height:1.5em;
+	border:1px solid black;
+	border-bottom:0;
+	border-top-right-radius:1rem;
 }
 
 .tab{
-
+	position:relative;
 	align-self:flex-start;
+	margin-bottom:-1px;
+	padding-block:1em;
+	padding-inline:2em;
 	border-top: 1px solid black;
 	border-left:1px solid black;
 	border-top-left-radius: .5rem;
 	color:black;
-	padding-block:1em;
-	padding-inline:2em;
+	background:white;
+	align-items:center;
+
+	z-index:1;
 
 
 
 
+}
+.tab::after{
+	content:"";
+	position:absolute;
+	top:-1px;
+	bottom:0;
+	left:calc(100% - 2em);
+	width:calc(2em + 10px);
+
+	transform: skewX(30deg);
+	transform-origin: top left;
+	border-top:1px solid black;
+	border-right:1px solid black;
+	border-top-right-radius:8px;
+
+	z-index:-1;
+	background:white;
+}
+
+#original-article {
+
+	>section{
+		border:1px solid black;
+		border-top:0;
+		padding-inline:1rem;
+
+	}
 }
 
