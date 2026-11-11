@@ -133,36 +133,56 @@ header{
 
 
 }
-
-
 blockquote{
-	
-	border: .5px solid;
-	padding:.25em;
-	div{
+margin-block:2rlh;
+position:relative;
+border: .5px solid;
+padding:.25em;
+--nudge: -2px;
+
+&::before,
+&::after {
+content: "+ +";
+content: "+ +" / "";
+position: absolute;
+left: -0.5ch;
+right: -0.5ch;
+font-family: "IBM Plex Mono", monospace;
+font-weight: 200;
+font-style: normal;
+font-size: 20px;
+line-height: 1;
+color: #A2A79C;
+text-align-last: justify;
+pointer-events: none;
+    }
+
+&::before {
+top: 0;
+translate: 0 calc(-50% + var(--nudge));
+}
+
+&::after {
+bottom: 0;
+translate: 0 calc(50% + var(--nudge));
+}
+
+div{
+	text-align:center;
+	background: var(--text-color);
+cite{
+font-family: var(--font-grotesk);
 
 
+        }
+    }
 
-		cite{
-
-		font-family: var(--font-grotesk);
-		text-align:center;
-
-
-
-
-
-		}
-	}
-	p{
-		font-family: var(--font-serif);
-		margin-block:2rlh;
-		font-size:1.5rem;
-		text-align:center;
-		line-height: 1.25rlh;
-		font-weight:400;
-	}
-
-
-
+p{
+font-family: var(--font-serif);
+margin-block:2rlh;
+font-size:1.5rem;
+text-align:center;
+line-height: 1.25rlh;
+font-weight:400;
+    }
 }
