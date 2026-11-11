@@ -6,7 +6,7 @@
   --font-serif:   "Sharp Serif Text", Georgia, serif;
   --font-display: "Respira", Impact, sans-serif;
   --font-favorit: "ABC Favorit", "Helvetica Neue", Arial, sans-serif;
-  --background-color:
+  --background-color:#717CC5;
   --text-color:
 
 
@@ -64,6 +64,10 @@
   font-stretch: 50% 200%;  /* compressed → expanded */
   font-style: normal;
   font-display: swap;
+}
+body{
+	background-color:var(--background-color);
+	color:#A2A79C;
 }
 
 a{

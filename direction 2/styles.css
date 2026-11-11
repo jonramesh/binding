@@ -74,7 +74,11 @@ a{
 	font-family:var(--font-grotesk);
 	font-weight:300;
 	text-align:start;
+	text-decoration: underline;
 	filter: blur(1px);
+	&:hover{
+    filter: blur(1.25px);
+  }
 
 }
 
@@ -148,6 +152,17 @@ header{
 
 
 	}
+	>div{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+
+
+
+	}
+	>a{
+		text-decoration: none;
+	}
 
 
 }
@@ -158,6 +173,7 @@ header{
 
 
 .disc {
+
 	display:flex;
 	flex-direction:row;
 	 align-items: center;
@@ -167,6 +183,8 @@ header{
 	background: transparent;
 	border: 3px solid rgb(0, 0, 0);
 	color: rgb(0, 0, 0);
+	width:300px;
+	height:80px;
 
 
 
