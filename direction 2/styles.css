@@ -1,0 +1,205 @@
+:root{
+
+
+
+  --font-grotesk: "Alte Haas Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --font-serif:   "Sharp Serif Text", Georgia, serif;
+  --font-display: "Respira", Impact, sans-serif;
+  --font-favorit: "ABC Favorit", "Helvetica Neue", Arial, sans-serif;
+
+
+
+}
+@font-face {
+  font-family: "Sharp Serif Text";
+  src: url("../fonts/direction-1-fonts/SharpSerifTextPanEuro-Thin-Trial.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sharp Serif Text";
+  src: url("../fonts/direction-1-fonts/SharpSerifTextPanEuro-ThinItalic-Trial.otf") format("opentype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sharp Serif Text";
+  src: url("../fonts/direction-1-fonts/SharpSerifTextPanEuro-Regular-Trial.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alte Haas Grotesk";
+  src: url("../fonts/direction-1-fonts/AlteHaasGroteskRegular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Alte Haas Grotesk";
+  src: url("../fonts/direction-1-fonts/AlteHaasGroteskBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+/* ---------- Respira ---------- */
+@font-face {
+  font-family: "Respira";
+  src: url("../fonts/direction-1-fonts/Respira-Black-Trial.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---------- ABC Favorit Widths (variable) ---------- */
+@font-face {
+  font-family: "ABC Favorit";
+  src: url("../fonts/direction-1-fonts/ABCFavoritWidthsVariableTrial.ttf") format("truetype-variations");
+  font-weight: 300 1000;   /* a range, because it's a variable font */
+  font-stretch: 50% 200%;  /* compressed → expanded */
+  font-style: normal;
+  font-display: swap;
+}
+
+main{
+	background-color: white;
+	filter: contrast(8);
+}
+
+a{
+	font-family:var(--font-grotesk);
+	font-weight:300;
+	text-align:start;
+	filter: blur(1px);
+
+}
+
+time{
+	font-family:var(--font-grotesk);
+	font-weight:300;
+	text-align:start;
+	filter: blur(1px);
+}
+
+p{
+
+	font-family:var(--font-favorit);
+	font-weight:300;
+
+}
+
+h1{
+
+
+	 filter: blur(2px);
+	text-align:center;
+	font-size:2.55rem;
+	text-box:trim-both cap alphabetic;
+	padding-top:.25em;
+	font-family:var(--font-grotesk);
+	border-top: 0.16ex solid black;
+}
+
+h2{
+
+	 filter: blur(1.5px);
+	font-family:var(--font-grotesk);
+	font-weight:400;
+	line-height:1.5cap;
+
+}
+
+header{
+
+	>:first-child{
+		text-align:start;
+
+
+	}
+	>:nth-child(2){
+
+		font-weight:300;
+		text-align:start;
+
+
+	}
+	>:nth-child(3){
+
+		font-weight:300;
+		text-align:end;
+
+	}
+	>:nth-child(4){
+
+		font-weight:300;
+		text-align:start;
+
+
+	}
+	>:nth-child(5){
+
+		font-weight:300;
+		text-align:start;
+
+
+
+	}
+
+
+}
+
+
+
+
+
+
+.disc {
+	display:flex;
+	flex-direction:row;
+	 align-items: center;
+  	justify-content: center;
+ 	 text-align: center;
+	border-radius: 100%;
+	background: transparent;
+	border: 3px solid rgb(0, 0, 0);
+	color: rgb(0, 0, 0);
+
+
+
+}
+
+
+
+
+
+
+.design{
+
+
+  background: linear-gradient(129deg, #fff 0%, #c7c7c7 100%);
+  transition: filter 0.3s ease-in-out;
+  &:hover{
+    filter: blur(1px);
+  }
+}
+
+.overlay{
+  position:fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 83, 128);
+  opacity: 0.9;
+  mix-blend-mode: multiply;
+  z-index: 10;
+  pointer-events: none;
+  &.two{
+    background-color: rgb(253, 1, 253);
+    opacity: 0.95;
+    mix-blend-mode: lighten;
+  }
+}
+

@@ -1,0 +1,131 @@
+:root{
+
+
+
+  --font-grotesk: "Alte Haas Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --font-serif:   "Sharp Serif Text", Georgia, serif;
+  --font-display: "Respira", Impact, sans-serif;
+  --font-favorit: "ABC Favorit", "Helvetica Neue", Arial, sans-serif;
+  --background-color:
+  --text-color:
+
+
+}
+@font-face {
+  font-family: "Sharp Serif Text";
+  src: url("../fonts/direction-1-fonts/SharpSerifTextPanEuro-Thin-Trial.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sharp Serif Text";
+  src: url("../fonts/direction-1-fonts/SharpSerifTextPanEuro-ThinItalic-Trial.otf") format("opentype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sharp Serif Text";
+  src: url("../fonts/direction-1-fonts/SharpSerifTextPanEuro-Regular-Trial.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alte Haas Grotesk";
+  src: url("../fonts/direction-1-fonts/AlteHaasGroteskRegular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Alte Haas Grotesk";
+  src: url("../fonts/direction-1-fonts/AlteHaasGroteskBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+/* ---------- Respira ---------- */
+@font-face {
+  font-family: "Respira";
+  src: url("../fonts/direction-1-fonts/Respira-Black-Trial.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---------- ABC Favorit Widths (variable) ---------- */
+@font-face {
+  font-family: "ABC Favorit";
+  src: url("../fonts/direction-1-fonts/ABCFavoritWidthsVariableTrial.ttf") format("truetype-variations");
+  font-weight: 300 1000;   /* a range, because it's a variable font */
+  font-stretch: 50% 200%;  /* compressed → expanded */
+  font-style: normal;
+  font-display: swap;
+}
+
+a{
+	font-family:var(--font-favorit);
+	font-weight:300;
+	text-align:center;
+
+}
+
+time{
+	font-family:var(--font-favorit);
+	font-weight:300;
+	text-align:center;
+}
+
+p{
+
+	font-family:var(--font-favorit);
+	font-weight:300;
+
+}
+
+h1{
+
+	font-family:var(--font-display);
+
+	text-align:center;
+	font-size:2rem;
+	text-box:trim-both cap alphabetic;
+}
+
+h2{
+
+
+	font-family:var(--font-serif);
+	font-weight:400;
+	line-height:1.5cap;
+
+}
+
+header{
+
+	>:first-child{
+		font-size:clamp(2.5rem, 14vw, 6rem);
+
+	}
+	>:nth-child(2){
+		font-family:var(--font-serif);
+		font-weight:300;
+
+
+	}
+	>:nth-child(3){
+		font-family:var(--font-serif);
+		font-weight:300;
+
+	}
+	>:nth-child(4){
+		font-family:var(--font-serif);
+		font-weight:300;
+
+	}
+
+
+}
