@@ -7,7 +7,7 @@
 --alley: 2rcap;
 --gutter-base:calc(var(--alley)/2);
 --size-h1:2rem;
-
+--size-h2:1.5rem;
 
 font-size:var(--font-size);
 
@@ -16,7 +16,10 @@ font-size:var(--font-size);
 
 }
 
+body{
 
+	padding-inline:calc(var(--font-size)*.02)
+}
 
 
 h1{
@@ -28,17 +31,53 @@ font-size: var(--size-h1);
 
 h2{
 
+font-size:var(--size-h2)
+
 
 }
 
 
 #original-article{
+
+
 	>section{
-		>p{
-			margin-block-end:calc(var(--font-size) * (.1))
+
+		h2{
+
+			margin-block-end:calc(var(--font-size) * (.1));
+
 		}
 
 
+		>p{
+			margin-block-end:calc(var(--font-size) * (.1));
+		}
+		>blockquote{
+			margin-block-end:calc(var(--font-size) * (.1));
+
+		}
+
+
+
+
+	}
+
+
+}
+
+header{
+	margin-block-end:calc(var(--font-size) * (.1));
+	h1{
+
+
+		margin-block-end:calc(var(--font-size) * (.1));
+
+	}
+	#identifier{
+
+		display:flex;
+		flex-direction:column;
+		gap:2cap;
 
 
 	}
