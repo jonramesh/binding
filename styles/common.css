@@ -30,6 +30,7 @@ body{
 
 }
 main{
+	grid-template-columns: minmax(0,1fr);
 	display:grid;
 	grid-template-areas:
 	'nav'
@@ -129,7 +130,7 @@ nav{
 
 	>div{
 
-		padding:1rem;
+		padding:.25rem;
 		border-left: .2ex solid;
 		border-bottom: .2ex solid;
 		border-top: .2ex solid;
@@ -137,6 +138,7 @@ nav{
 		justify-content: center;
 		align-items:center;
 		flex: 1;
+		min-width:0;
 		>a{
 			font-size:.75rem;
 
