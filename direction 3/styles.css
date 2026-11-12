@@ -141,24 +141,16 @@ header{
 
 /*-----------Tab Folder--------------*/
 
-
 .folder-tab{
 
 	display:flex;
-	flex-direction:column;
 	position:sticky;
 	top:0;
+	z-index:2;
 	background:white;
-
-
+	border-bottom:1px solid black;
 }
-.folder-tab::after{
-	content:"";
-	height:1.5em;
-	border:1px solid black;
-	border-bottom:0;
-	border-top-right-radius:1rem;
-}
+
 
 .tab{
 	position:relative;
@@ -166,9 +158,8 @@ header{
 	margin-bottom:-1px;
 	padding-block:1em;
 	padding-inline:2em;
-	border-top: 1px solid black;
-	border-left:1px solid black;
-	border-top-left-radius: .5rem;
+	border: 1px solid black;
+	border-radius:.5rem .5rem 0 0;
 	color:black;
 	background:white;
 	align-items:center;
@@ -180,22 +171,16 @@ header{
 
 }
 .tab::after{
-	content:"";
-	position:absolute;
-	top:-1px;
-	bottom:0;
-	left:calc(100% - 2em);
-	width:calc(2em + 10px);
-
-	transform: skewX(30deg);
-	transform-origin: top left;
-	border-top:1px solid black;
-	border-right:1px solid black;
-	border-top-right-radius:8px;
-
-	z-index:-1;
+	content:""
+;	position:absolute;
+	left:0;
+	right:0;
+	bottom:-3px;
+	height:4px;
 	background:white;
 }
+
+
 
 #original-article {
 
@@ -203,6 +188,7 @@ header{
 		border:1px solid black;
 		border-top:0;
 		padding-inline:1rem;
+		padding-top:1rem;
 
 	}
 }
