@@ -7,7 +7,7 @@
   --font-display: "Respira", Impact, sans-serif;
   --font-favorit: "ABC Favorit", "Helvetica Neue", Arial, sans-serif;
   --background-color:#3f4a90;
-  --text-color:
+  --text-color:#A2A79C
 
 
 }
@@ -65,6 +65,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 body{
 	background-color:var(--background-color);
 	color:#A2A79C;
@@ -74,8 +75,13 @@ a{
 	font-family:var(--font-favorit);
 	font-weight:300;
 	text-align:center;
+	background-color:var(--text-color);
+	color:var(--background-color);
+
 
 }
+
+
 
 time{
 	font-family:var(--font-favorit);
@@ -133,7 +139,7 @@ header{
 
 
 }
-blockquote{
+blockquote,header{
 margin-block:2rlh;
 position:relative;
 border: .5px solid;
@@ -167,9 +173,12 @@ bottom: 0;
 translate: 0 calc(50% + var(--nudge));
 }
 
+
 div{
 	text-align:center;
-	background: var(--text-color);
+	background-color:var(--text-color);
+	color:var(--background-color);
+
 cite{
 font-family: var(--font-grotesk);
 
@@ -185,4 +194,19 @@ text-align:center;
 line-height: 1.25rlh;
 font-weight:400;
     }
+blockquote {
+
+	>div{
+
+	}
 }
+
+}
+
+header{
+margin:none;
+
+border:none;
+}
+
+
