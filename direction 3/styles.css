@@ -94,17 +94,20 @@ h1{
 	font-size:clamp(2.5rem, 12vw, 6rem);
 	text-box:trim-both cap alphabetic;
 	line-height:1.25cap;
-	font-family:geist pixel;
-	font-style: normal;
-	font-weight:200;
+	font-family: "Geist Pixel", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 
 }
 
 h2{
 
 
-	font-family:geist pixel;
-	font-weight:400;
+	font-family: "Geist Pixel", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 	line-height:1.5cap;
 	font-size:1.5rem;
 
