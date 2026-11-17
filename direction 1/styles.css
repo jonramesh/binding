@@ -1,8 +1,8 @@
 .window:nth-child(1){margin-top:2em;}
 .window:nth-child(2){ margin-left:45%; margin-top:-11em; z-index:1; }
 .window:nth-child(3){ margin-top:-9em; z-index:1;}
-.window:nth-child(4){margin-left:65%; margin-top:-13em;z-index:2;}
+.window:nth-child(4){margin-left:55%; margin-top:-7em;z-index:2;}
 .window:nth-child(5){ margin-left:10%; margin-top:-9em;z-index:3; }
-.window:nth-child(6){ margin-left:55%; margin-top:-9em;z-index:4; }
-.window:nth-child(7){ margin-left:5%; margin-top:-10em; z-index:4;}
-.window:nth-child(8){ margin-left:35%; margin-top:-10em; z-index:4;}
+.window:nth-child(6){ margin-left:35%; margin-top:-6em;z-index:4; }
+.window:nth-child(7){ margin-left:5%; margin-top:-6em; z-index:4;}
+.window:nth-child(8){ margin-left:35%; margin-top:-8em; z-index:4;}

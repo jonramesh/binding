@@ -8,6 +8,17 @@
 --size-h1:3.25rem;
 --size-h2:2rem;
 
+--base-color:white;
+
+
+--crt-red: rgb(218,49,49);
+--crt-green: rgb(112,159,115);
+--crt-blue:rgb(40,129,206);
+
+
+
+
+
 font-size:var(--font-size);
 line-height:var(--leading);
 
@@ -53,11 +64,61 @@ line-height:var(--leading);
 body{
 	background:black;
 	color:white;
-	padding-inline:calc(var(--size-root)*.02px);
+
 	overflow-x:hidden;
 
+}
+/*---------CRTTTT SCREEENNNN ----*/
+
+
+.crt{
+
+	background-color: rgb(25,25,30);
+	text-shadow: 0 0  .2em
+	currentColor, 1px 1px
+	rgba(255,0,255,0.5),
+	-1px -1px rgba(0,225,225,0.4);
+	position:relative;
+	&:before,
+	&:after{
+		content:"";
+		transform:
+		translateZ(0);
+			pointer-events:none;
+			mix-blend-mode:
+		overlay;
+		position:absolute;
+		height:100%;
+		width:100%;
+		left:0;
+		top:0;
+		z-index: 1;
+	}
+	&:before{
+
+		background:repeating-linear-gradient(
+
+			var(--crt-red)0px,
+			var(--crt-green)2px,
+			var(--crt-blue) 4px
+		);
+	}
+	&:after{
+		background:repeating-linear-gradient(
+		90deg,
+		var(--crt-red)1px,
+		var(--crt-green)2px,
+		var(--crt-blue)3px
+
+		);
+
+	}
 
 }
+
+
+
+
 main{
 	grid-template-columns: minmax(0,1fr);
 	display:grid;
@@ -67,10 +128,12 @@ main{
 	'article'
 	'footer';
 	row-gap:var(--alley);
-	padding-inline:var(--gutter-base);
+
 	padding-block-start:var(--gutter-base);
 	max-inline-size:50rem;
 	margin-inline:auto;
+	font-family: "Alte Haas Grotesk";
+font-weight:400;
 
 	>header{
 		grid-area:header;
@@ -124,7 +187,7 @@ font-size:var(--size-h2)
 	.content{
 
 
-
+		padding-inline:var(--gutter-base);
 
 
 		h2{
@@ -153,6 +216,7 @@ font-size:var(--size-h2)
 }
 
 header{
+	padding-inline:var(--gutter-base);
 	margin-block-end:calc(var(--size-root) * (3px));
 	h1{
 
@@ -232,9 +296,9 @@ header{
 	display:inline-flex;
 	flex-direction:column;
 	max-width:100%;
-	background:white;
-	color:black;
-	border:1px solid black;
+	background:var(--screen);
+	color:var(--base-color);
+	border:2px solid var(--base-color);
 	border-bottom-left-radius:12px;
 	border-bottom-right-radius:12px;
 	margin-left: 0%;
@@ -329,7 +393,7 @@ Retrieved 2026-11-17, License - CC BY-SA 4.0
   right: max(100px);
   top: calc(-1 * var(--border-width));
   height: 40px;
-  width:40%;
+  width:25%;
   display: flex;
   isolation: isolate;
 }
