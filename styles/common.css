@@ -296,7 +296,7 @@ Retrieved 2026-11-17, License - CC BY-SA 4.0
   --bar-color:white;
 
   --card-corner: 20px;
-  --tab-corner: 12px;
+  --tab-corner: 10px;
   --border-width: 1px;
 
   display: flex;
@@ -306,7 +306,7 @@ Retrieved 2026-11-17, License - CC BY-SA 4.0
 .card * { box-sizing: inherit; }
 .header {
   flex: none;
-  height: 20px;
+  height: 80px;
   font: 12px sans-serif;
   background-color: var(--bar-color);
   border: var(--border-width) solid white;
@@ -326,9 +326,9 @@ Retrieved 2026-11-17, License - CC BY-SA 4.0
 .tab {
   z-index: 1;
   position: absolute;
-  right: max(24px, var(--card-corner));
+  right: max(100px);
   top: calc(-1 * var(--border-width));
-  height: 20px;
+  height: 40px;
   width:40%;
   display: flex;
   isolation: isolate;
