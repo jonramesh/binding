@@ -80,8 +80,15 @@ main{
 
 	}
 	>footer{
-		grid-area:footer
+		grid-area:footer;
+
 	}
+}
+
+footer{
+	height:100vh;
+		width:100%;
+		background:white;
 }
 
 
@@ -114,10 +121,11 @@ font-size:var(--size-h2)
 	flex-direction:column;
 	gap:2rem;
 
-	>section{
-		border: 1px solid white;
-		border-top-left-radius: 12px;
-		border-top-right-radius: 12px;
+	>.content{
+
+
+
+
 
 		h2{
 
@@ -125,20 +133,7 @@ font-size:var(--size-h2)
 			line-height:1.25;
 
 		}
-		&::before{
-			content:"";
-			position:absolute;
-			left:-1px;
-			padding: .5em 1.5em;
-			background:white;
-			color:black;
-			font-size:.75rem;
-			border-radius:8px 8px 0 0;
 
-
-
-
-		}
 
 
 		>p{
@@ -284,4 +279,104 @@ header{
 	border-radius:50%;
 	background:black;
 
+}
+
+
+/*---------- section styles */
+
+
+/*
+Source - https://stackoverflow.com/a/77557025
+Posted by DustInComp, modified by community. See post 'Timeline' for change history
+Retrieved 2026-11-17, License - CC BY-SA 4.0
+*/
+
+.card {
+  --bg-color: rgb(237, 241, 244);
+  --card-corner: 20px;
+  --tab-corner: 12px;
+  --border-width: 2px;
+
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.card * { box-sizing: inherit; }
+.header {
+  flex: none;
+  height: 20px;
+  font: 12px sans-serif;
+  background-color: var(--bg-color);
+  border: var(--border-width) solid #0144;
+  border-bottom: none;
+  border-radius: var(--card-corner) var(--card-corner) 0 0;
+  position: relative;
+}
+.content {
+  flex: auto;
+  background-color: var(--bg-color);
+  border: var(--border-width) solid #0144;
+  border-top: none;
+  border-radius: 0 0 var(--card-corner) var(--card-corner);
+  padding: 10px;
+}
+
+.tab {
+  z-index: 1;
+  position: absolute;
+  right: max(24px, var(--card-corner));
+  top: calc(-1 * var(--border-width));
+  height: 20px;
+  display: flex;
+  isolation: isolate;
+}
+/* border style */
+.inner::before, .outer::before, .label {
+  border-width: var(--border-width);
+  border-color: #0144;
+}
+/* tab curve elements */
+.inner, .outer {
+  width: var(--tab-corner);
+  position: relative;
+}
+.inner::before, .outer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+/* fills */
+.outer, .inner::before { background-color: white; }
+.inner, .outer::before { background-color: var(--bg-color); }
+/* align borders of neighboring elements */
+.outer {
+  z-index: 1;
+  align-self: start;
+  height: 50%;
+}
+.left.outer { margin-right: calc(-1 * var(--border-width)); }
+.right.outer { margin-left: calc(-1 * var(--border-width)); }
+/* borders */
+.left.outer::before {
+  border-style: solid solid none none;
+  border-top-right-radius: var(--tab-corner);
+}
+.left.inner::before {
+  border-style: none none solid solid;
+  border-bottom-left-radius: var(--tab-corner);
+}
+.right.inner::before {
+  border-style: none solid solid none;
+  border-bottom-right-radius: var(--tab-corner);
+}
+.right.outer::before {
+  border-style: solid none none solid;
+  border-top-left-radius: var(--tab-corner);
+}
+.label {
+  border-bottom-style: solid;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
