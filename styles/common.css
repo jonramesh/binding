@@ -69,8 +69,7 @@ body{
 
 }
 /*---------CRTTTT SCREEENNNN ----*/
-
-
+/* https://aleclownes.com/2017/02/01/crt-display.html*/
 .crt{
 
 	background-color: rgb(25,25,30);
@@ -228,7 +227,7 @@ header{
 
 		display:flex;
 		flex-direction:column;
-		gap:.5cap;
+
 
 
 	}
@@ -304,12 +303,16 @@ header{
 	margin-left: 0%;
 	margin-top:0em;
 
+	box-shadow:
+	0 0 .6em var(--base-color),
+
+
 }
 
 
 
 .bar{
-	background-color: black;
+
 	border :1px solid white;
 	height:30px;
 	width:100%;
@@ -320,12 +323,12 @@ header{
 .controls{
 	display:flex;
 	height:100%;
-	gap:2px;
+
 
 	>span{
 		flex-shrink:0;
 		width:2em;
-		background-color: white;
+
 		border: 1px solid white;
 		display:flex;
 		justify-content:center;
@@ -341,7 +344,7 @@ header{
 	height:40%;
 
 	border-radius:50%;
-	background:black;
+	background:var(--base-color);
 
 }
 
@@ -380,7 +383,7 @@ Retrieved 2026-11-17, License - CC BY-SA 4.0
 }
 .content {
   flex: auto;
-  background-color: var(--bg-color);
+
   border: var(--border-width) solid white;
   border-top: none;
   border-radius: 0 0 var(--card-corner) var(--card-corner);
@@ -413,7 +416,7 @@ Retrieved 2026-11-17, License - CC BY-SA 4.0
   inset: 0;
 }
 /* fills */
-.outer, .inner::before { background-color: black; }
+.outer, .inner::before { }
 .inner, .outer::before { background-color: var(--bar-color); }
 /* align borders of neighboring elements */
 .outer {
