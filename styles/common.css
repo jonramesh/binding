@@ -121,7 +121,7 @@ font-size:var(--size-h2)
 	flex-direction:column;
 	gap:2rem;
 
-	>.content{
+	.content{
 
 
 
@@ -140,7 +140,7 @@ font-size:var(--size-h2)
 			margin-block-end:calc(var(--size-root) * (2px));
 		}
 		>blockquote{
-			margin-block-end:calc(var(--size-root) * (.1));
+			margin-block-end:calc(var(--size-root) * (.1px));
 
 		}
 
@@ -292,10 +292,12 @@ Retrieved 2026-11-17, License - CC BY-SA 4.0
 */
 
 .card {
-  --bg-color: rgb(237, 241, 244);
+  --bg-color: black;
+  --bar-color:white;
+
   --card-corner: 20px;
   --tab-corner: 12px;
-  --border-width: 2px;
+  --border-width: 1px;
 
   display: flex;
   flex-direction: column;
@@ -306,8 +308,8 @@ Retrieved 2026-11-17, License - CC BY-SA 4.0
   flex: none;
   height: 20px;
   font: 12px sans-serif;
-  background-color: var(--bg-color);
-  border: var(--border-width) solid #0144;
+  background-color: var(--bar-color);
+  border: var(--border-width) solid white;
   border-bottom: none;
   border-radius: var(--card-corner) var(--card-corner) 0 0;
   position: relative;
@@ -315,7 +317,7 @@ Retrieved 2026-11-17, License - CC BY-SA 4.0
 .content {
   flex: auto;
   background-color: var(--bg-color);
-  border: var(--border-width) solid #0144;
+  border: var(--border-width) solid white;
   border-top: none;
   border-radius: 0 0 var(--card-corner) var(--card-corner);
   padding: 10px;
@@ -327,13 +329,14 @@ Retrieved 2026-11-17, License - CC BY-SA 4.0
   right: max(24px, var(--card-corner));
   top: calc(-1 * var(--border-width));
   height: 20px;
+  width:40%;
   display: flex;
   isolation: isolate;
 }
 /* border style */
 .inner::before, .outer::before, .label {
   border-width: var(--border-width);
-  border-color: #0144;
+  border-color: white;
 }
 /* tab curve elements */
 .inner, .outer {
@@ -346,8 +349,8 @@ Retrieved 2026-11-17, License - CC BY-SA 4.0
   inset: 0;
 }
 /* fills */
-.outer, .inner::before { background-color: white; }
-.inner, .outer::before { background-color: var(--bg-color); }
+.outer, .inner::before { background-color: black; }
+.inner, .outer::before { background-color: var(--bar-color); }
 /* align borders of neighboring elements */
 .outer {
   z-index: 1;
@@ -374,8 +377,9 @@ Retrieved 2026-11-17, License - CC BY-SA 4.0
   border-top-left-radius: var(--tab-corner);
 }
 .label {
+  flex:1;
   border-bottom-style: solid;
-  background-color: white;
+  background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
