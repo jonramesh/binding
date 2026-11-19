@@ -1,3 +1,13 @@
+:root{
+
+	--base-color:#00f0ff;
+
+
+}
+
+
+
+
 .window:nth-child(1){margin-top:2em;}
 .window:nth-child(2){ margin-left:45%; margin-top:-11em; z-index:1; }
 .window:nth-child(3){ margin-top:-9em; z-index:1;}
