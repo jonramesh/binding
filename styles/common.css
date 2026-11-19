@@ -127,8 +127,7 @@ main{
 	grid-template-areas:
 	'nav'
 	'header'
-	'article'
-	'footer';
+	'article';
 	row-gap:var(--alley);
 
 	padding-block-start:var(--gutter-base);
@@ -315,10 +314,10 @@ header{
 	background:var(--screen);
 	color:var(--base-color);
 	border:var(--stroke) solid var(--base-color);
-	border-bottom-left-radius:12px;
+
 	border-bottom-right-radius:12px;
 	border-top-right-radius:12px;
-	border-top-left-radius:12px;
+
 	margin-left: 0%;
 	margin-top:0em;
 
@@ -379,18 +378,20 @@ Retrieved 2026-11-17, License - CC BY-SA 4.0
 */
 
 .card {
-  --bg-color: black;
-  --bar-color:white;
+
 
   --card-corner: 20px;
-  --tab-corner: 10px;
-  --border-width: 1px;
 
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
+  --border-width: 1px;
+  --peek: 80px;
+	display:contents;
+
 }
-.card * { box-sizing: inherit; }
+
+
+
+
+
 
 
 
@@ -400,36 +401,14 @@ Retrieved 2026-11-17, License - CC BY-SA 4.0
 .card:nth-of-type(4){  --card-number:3;}
 
 
-.card{
-	--peek: 80px;
-	position:sticky;
-	top: calc(var(--card-number) * var(--peek));
-
-
-
-}
-#original-article{
-	gap:0;
-
-}
-
-.card{
-	top: calc(var(--card-number) * var(--peek));
-}
 
 .content{
-	background:var(--bg-color);
-}
-.content{
-	flex:none;
-	height: var(--peek);
-	position:sticky;
-	top:calc(var(--card-number) * var(--peek));
-	background: rgb(25,25,30);
-	z-index:2;
+
+	border: var(--border-width) solid var(--base-color);
+	border-top:none;
+	padding: 10px;
 	margin-bottom:2rem;
 }
-
 
 
 
@@ -437,7 +416,7 @@ Retrieved 2026-11-17, License - CC BY-SA 4.0
 .tab{
 
 position:absolute;
-bottom:0;
+bottom:19px;
 width:25%;
 height: 60px;
 display: flex;
@@ -449,22 +428,37 @@ z-index: 1;
 }
 
 .header{
+
+
+top:calc(var(--card-number) * var(--peek));
+background:rgb(25,25,30);
+ z-index:2;
  flex:none;
- height:80px;
- position:relative;
+ height:var(--peek);
+ position:sticky;
 
+
+
+
+
+}
+
+.header::after{
+
+	content:"";
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	height: var(--card-corner);
+	border: var(--border-width) solid var(--base-color);
+	border-bottom:none;
+	border-top-right-radius: var(--card-corner) var(--card-corner);;
 
 
 
 }
 
-.content{
-	flex:auto;
-	border:var(--border-width) solid var(--base-color);
-	border-top-right-radius: var(--card-corner);
-	padding:10px;
-
-}
 
 
 .label{
@@ -474,8 +468,10 @@ z-index: 1;
 	align-items:center;
 	justify-content:center;
 	background-color:var(--base-color);
-	color:white;
+	color:rgb(25,25,30);
 	clip-path:polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
 
 }
 
+
+#original-article {gap:0px;}
